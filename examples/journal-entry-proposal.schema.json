@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Accreva-Business-Ledger/public-api-examples/examples/journal-entry-proposal.schema.json",
+  "title": "Journal entry proposal example",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["description", "currency", "lines"],
+  "properties": {
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "lines": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["account_code", "description", "debit", "credit"],
+        "properties": {
+          "account_code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "debit": {
+            "type": "string",
+            "pattern": "^(0|[1-9][0-9]*)\\.[0-9]{2}$"
+          },
+          "credit": {
+            "type": "string",
+            "pattern": "^(0|[1-9][0-9]*)\\.[0-9]{2}$"
+          }
+        }
+      }
+    }
+  }
+}

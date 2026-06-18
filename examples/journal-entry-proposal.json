@@ -1,0 +1,18 @@
+{
+  "description": "Record monthly software subscription expense",
+  "currency": "CAD",
+  "lines": [
+    {
+      "account_code": "6100",
+      "description": "Software subscriptions",
+      "debit": "250.00",
+      "credit": "0.00"
+    },
+    {
+      "account_code": "2100",
+      "description": "Accounts payable",
+      "debit": "0.00",
+      "credit": "250.00"
+    }
+  ]
+}
