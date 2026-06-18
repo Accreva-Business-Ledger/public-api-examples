@@ -1,6 +1,6 @@
-# Accreva public API examples
+# ACCREVA public API examples
 
-This repository contains non-production request and response examples for design discussions. Accreva does not publish a general-availability API contract from this repository.
+This repository contains non-production request and response examples for design discussions. ACCREVA does not publish a general-availability API contract from this repository.
 
 The examples show several rules used in accounting workflows:
 
